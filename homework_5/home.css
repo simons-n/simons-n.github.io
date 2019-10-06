@@ -1,0 +1,72 @@
+body {
+    background-image: url("./img/450937182_b5fc4b5d75_o.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*.footText {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}*/
+
+.homeNav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 8px;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+#menu{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*.navbar ul li:first-child {*/
+#title {
+    /*position: absolute;*/
+    /*top: 69px;*/
+    /*left: 65px;*/
+    font-family: Helvetica;
+    font-size: 90px;
+    top: 69;
+}
+
+.navText {
+    top: 80px;
+    font-family: Helvetica;
+    text-decoration: none;
+    float: bottom right;
+}
+
+footer {
+    display: grid;
+    background-color: #2d2d2d;
+    grid-template-columns: 1fr fit-content(400px) 1fr;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.footText {
+    color: #ffffff;
+    font-family: Helvetica;
+}
+
+#address {
+    text-align: center;
+}
+
+#email {
+    text-align: right;
+}
+
+/*filter: brightness*/
+/*change css of radio buttons for color picker*/
+/*colspan td tr*/
