@@ -15,16 +15,12 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    border-radius: 8px;
     align-items: flex-end;
     justify-content: space-between;
     color: #ffffff;
 }
 
-#menu{
-    color: #ffffff;
-    text-decoration: none;
-}
+
 
 /*.navbar ul li:first-child {*/
 #title {
@@ -41,6 +37,15 @@ body {
     font-family: Helvetica;
     text-decoration: none;
     float: bottom right;
+}
+
+#menu{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#emptyspace {
+    flex-basis: 400px;
 }
 
 footer {
