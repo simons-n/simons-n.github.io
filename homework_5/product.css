@@ -1,0 +1,99 @@
+
+body {
+    background-image: url("./img/background.png");
+    background-size: 100% 100%;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.homeNav {
+    display: flex;
+    height: 70px;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #ffffff;
+    background-image: url("./img/small\ bar.png");
+    background-size: 100% 100%;
+}
+
+#title {
+    font-family: Helvetica;
+    font-size: 59px;
+    top: 69;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.navText {
+    top: 80px;
+    font-size: 22px;
+    font-family: Helvetica;
+    text-decoration: none;
+    float: bottom right;
+    font-weight: lighter;
+}
+
+#menu{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#emptyspace {
+    flex-basis: 480px;
+}
+
+#cart {
+    padding-right: 5px;
+}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+}
+
+.itemBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 245px;
+    background-color: #ffffff;
+    opacity: 0.70;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 44px;
+}
+
+.itemText {
+    font-family: Helvetica;
+    font-size: 27px;
+    line-height: 44px;
+    text-align: center;    
+}
+
+
+footer {
+    display: flex;
+    background-color: #2d2d2d;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footText {
+    color: #ffffff;
+    font-family: Helvetica;
+}
