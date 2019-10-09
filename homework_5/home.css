@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/*Navigation Bar*/
 .homeNav {
     display: flex;
     flex-direction: row;
@@ -12,31 +13,26 @@ body {
     justify-content: space-between;
     color: #ffffff;
 }
-
 #title {
-    font-family: Helvetica;
-    font-size: 90px;
+    font-family: "American Typewriter";
+    font-size: 80px;
     font-weight: bolder;
-    top: 69;
 }
-
 .navText {
     top: 80px;
-    font-family: Helvetica;
+    font-family: "American Typewriter";
     text-decoration: none;
-    float: bottom right;
     font-weight: lighter;
 }
-
 #menu{
     color: #ffffff;
     text-decoration: none;
 }
-
 #emptyspace {
     flex-basis: 400px;
 }
 
+/*Footer*/
 footer {
     display: grid;
     background-color: #2d2d2d;
@@ -47,20 +43,13 @@ footer {
     right: 0px;
     left: 0px;
 }
-
 .footText {
     color: #ffffff;
-    font-family: Helvetica;
+    font-family: "American Typewriter";
 }
-
 #address {
     text-align: center;
 }
-
 #email {
     text-align: right;
 }
-
-/*filter: brightness*/
-/*change css of radio buttons for color picker*/
-/*colspan td tr*/

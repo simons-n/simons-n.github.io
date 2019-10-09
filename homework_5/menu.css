@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*Navigation Bar*/
 .homeNav {
     display: flex;
     height: 70px;
@@ -23,9 +23,8 @@ body {
 }
 
 #title {
-    font-family: Helvetica;
+    font-family: "American Typewriter";
     font-size: 59px;
-    top: 69;
     color: #ffffff;
     text-decoration: none;
     font-weight: lighter;
@@ -34,9 +33,8 @@ body {
 .navText {
     top: 80px;
     font-size: 22px;
-    font-family: Helvetica;
+    font-family: "American Typewriter";
     text-decoration: none;
-    float: bottom right;
     font-weight: lighter;
 }
 
@@ -54,13 +52,17 @@ body {
     padding-right: 5px;
 }
 
+/*Header*/
 header {
+    font-family: "American Typewriter";
     margin-top: 25px;
     margin-bottom: 0px;
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
 }
 
+/*Menu and Menu Items*/
 .menuGrid {
     display: flex;
     flex-direction: row;
@@ -78,14 +80,16 @@ header {
     color: #000000;
 }
 
+/*Top row of menu*/
 #top {
     align-items: flex-end;
 }
-
+/*Bottom row of menu*/
 #bottom{
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
+/*Labels for each menu item*/
 .itemBar {
     display: flex;
     flex-direction: row;
@@ -99,7 +103,7 @@ header {
 }
 
 .itemText {
-    font-family: Helvetica;
+    font-family: "American Typewriter";
     font-size: 27px;
     line-height: 44px;
     text-align: center;    
@@ -144,19 +148,19 @@ when those lines were in .menuItem*/
     background-repeat: no-repeat;   
 }
 
-
+/*Footer*/
 footer {
     display: flex;
     background-color: #2d2d2d;
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
-    height: 20px;
+    height: 25px;
     width: 100%;
     bottom: 0px;
 }
 
 .footText {
     color: #ffffff;
-    font-family: Helvetica;
+    font-family: "American Typewriter";
 }
