@@ -1,0 +1,1 @@
+EXTRA CREDIT: I added product details pages for all products.

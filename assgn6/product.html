@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href="product.css">
+        <title>Bun Bun Bake Shop Home</title>
+    </head>
+    <body>
+        <nav class="homeNav">
+            <a href="./home.html" class="navTitle" id="title">
+                <div>Bun Bun Bake Shop</div>
+            </a>
+            <div class="navText" id="emptyspace"></div>
+            <a href="./menu.html" class="navText" id="menu">
+                <div>Menu</div>
+            </a>
+            <div class="navText" id="locate">Locate</div>
+            <div class="navText" id="about">About</div>
+            <div class="navText" id="cart">
+                <img src="./img/cartunselected.png" height="30" width="40" alt="cart icon"> 
+            </div>
+        </nav>
+
+        <header>
+            Original Bun
+        </header>
+
+        <main>
+            <div class="productImg">
+                <div class="flavorBar">
+                    <div class="flavorText">No Glaze</div>
+                </div>
+            </div>  
+
+            <div id="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa 
+                    tempor nec feugiat. Nunc aliquet bibendum enim facilisis 
+                    gravida. Nisl nunc mi ipsum faucibus vitae aliquet nec 
+                    ullamcorper. Amet luctus venenatis lectus magna fringilla. 
+            </div>
+
+            <!--Label and Selector for glazes-->
+            <div class="label" id="glazeLabel">Glaze:</div>
+            <select class="field" id="glazeSelect">
+                <option value="none">None</option>
+                <option value="sugarMilk">Sugar-Milk</option>
+                <option value="vanillaMilk">Vanilla-Milk</option>
+                <option value="doubleChocolate">Double Chocolate</option>
+            </select>
+
+            <!--Label and Selector for quantities-->
+            <div class="label" id="quantLabel">Quantity:</div>
+            <select class="field" id="quantSelect">
+                <option value="one">1</option>
+                <option value="three">3</option>
+                <option value="six">6</option>
+                <option value="twelve">12</option>
+            </select>
+
+            <!--Label and display of price-->
+            <div class="label" id="priceLabel">Price:</div>
+            <div class="field" id="priceField">$1.50</div>
+
+            <!--Buttons-->
+            <button class="button" id="add" type="button">ADD TO CART</button>
+            <a href="menu.html" class="button" id="moreBuns">&lt; More Buns</a>
+            <button class="button" id="checkOut" type="button">Check Out ></button>
+        </main>
+
+        <footer>
+            <div class="footText" id="phone"> Phone: (412) 867-5309</div> 
+            <div class="footText" id="address">Address: 42 Lorem Ipsum, Pittsburgh PA 15213</div>
+            <div class="footText" id="email">Email: Dolor@sit.amet </div>
+        </footer>
+    </body>
+</html>
