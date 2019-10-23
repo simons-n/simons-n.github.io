@@ -64,81 +64,102 @@ header {
     font-weight: bold;
 }
 
-/*The image and its flavor label*/
-.productImg {
-    grid-area: 2 / 5 / 6 / 9;
-    background: url(./img/caramelPecan.jpg);
-}
-.flavorBar {
-    justify-content: center;
-    background-color: #ffffff;
-    opacity: 0.70;
-    height: 44px;
+#cartRectangle {
     position: relative;
-    top: 245px;
-}
-.flavorText {
-    font-family: "American Typewriter";
-    font-size: 27px;
-    line-height: 44px;
-    text-align: center;  
-}
-
-/*Description of the product*/
-#description {
-    text-indent: 1em;
-    font-family: "American Typewriter";
-    font-size: 18px;
-    grid-area: 6 / 5 / auto / 9;
+    z-index: -1;
+    width: 1115px;
+    height: 555px;
+    background: #ffffff;
+    grid-area: 2 / 3 / auto / auto;
+    right: 20px;
+    bottom: 20px;
 }
 
-/*Labels and fields for the drop-downs and price*/
-.label {
-    margin-top: 75px;
+.product {
+    border: 1px solid lightgray;
+    padding: 9px;
 }
-.field {
-    margin-top: 75px;
-}
-#glazeLabel {
-    grid-area: 2 / 9 / auto / auto;
-    align-self: center;
+
+.prodDetails {
+    position: relative;
+    top: 37px;
+    font-size: 25px;
     font-family: "American Typewriter";
-    font-size: 34px;
-    font-weight: lighter;
 }
-#glazeSelect {
-    grid-area: 2 / 11 / auto / auto;
-    justify-self: center;
-    align-self: center;
-}
-#quantLabel {
-    grid-area: 3 / 9 / auto / auto;
-    align-self: center;
+
+.quant {
+    position: relative;
+    top: 51px;
+    font-size: 25px;
     font-family: "American Typewriter";
-    font-size: 34px;
-    font-weight: lighter;
 }
-#quantSelect {
-    grid-area:  3 / 11 / auto / auto;
-    justify-self: center;
-    align-self: center;
-    margin-right: 120%;
-}
-#priceLabel {
-    grid-area: 4 / 9 / auto / auto;
-    align-self: center;
+
+.remove {
+    position: relative;
+    top: 51px;
+    font-size: 25px;
     font-family: "American Typewriter";
-    font-size: 34px;
-    font-weight: lighter;
+    color: gray;
 }
-#priceField {
-    grid-area:  4 / 10 / auto / auto;
-    justify-self: center;
-    align-self: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 170%;
-    background-color: #ffffff;
+
+.prodTotal {
+    position: relative;
+    top: 51px;
+    font-size: 25px;
+    font-family: "American Typewriter";
+    text-align: right;
+    padding-right: 9px;
+}
+
+#total {
+    position: relative;
+    grid-area: 7 / 12 / 8 / 15;
+    border: 1px solid lightgray;
+    padding: 9px;
+    font-size: 26px;
+    font-family: "American Typewriter";
+}
+
+#product1 {
+    position: relative;
+    grid-area: 3 / 3 / 5 / 15;
+}
+
+#prod1Details {
+    grid-area: 3 / 5 / 5 / 8; 
+}
+
+#quant1 {
+    grid-area: 3 / 8 / 5 / 10;
+}
+
+#remove1 {
+    grid-area: 3 / 10 / 5 / 12;
+}
+
+#prodTotal1 {
+    grid-area: 3 / 12 / 5 / 15;
+}
+
+#product2 {
+    position: relative;
+    grid-area: 5 / 3 / 7 / 15;
+}
+
+#prod2Details {
+    grid-area: 5 / 5 / 7 / 8; 
+}
+
+#quant2 {
+    grid-area: 5 / 8 / 7 / 10;
+}
+
+#remove2 {
+    grid-area: 5 / 10 / 7 / 12;
+}
+
+#prodTotal2 {
+    grid-area: 5 / 12 / 7 / 15;
 }
 
 /*Buttons*/
@@ -151,29 +172,18 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 26px;
     border-radius: 9px;
+    width: 347px;
+    height: 55px;
 }
-#add {
-    grid-area: 7 / 10 / auto / auto;
-    justify-self: center;
-    align-self: center;
-    width: 345px;
-    font-size: 30px;
-    margin-left: 130%;
+
+#checkout1 {
+    grid-area: 2 / 11 / auto / auto;
 }
-#moreBuns {
-    grid-area: 8 / 9 / auto / auto;
-    width: 142px;
-    font-size: 22px;
-    padding-top: 15px;
-    font-family: "American Typewriter";
-    text-decoration: none;
-}
-#checkOut {
+
+#checkout2 {
     grid-area: 8 / 11 / auto / auto;
-    width: 162px;
-    font-size: 22px;
 }
 
 /*Footer*/
