@@ -1,5 +1,5 @@
 body {
-    background-image: url("./img/450937182_b5fc4b5d75_o.jpg");
+    background-image: url("../img/450937182_b5fc4b5d75_o.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -43,8 +43,6 @@ footer {
     right: 0px;
     left: 0px;
     height: 20px;
-
-    document.getElementByID("number1").value
 }
 .footText {
     color: #ffffff;

@@ -1,7 +1,34 @@
 var glaze = 'none';
 var quant = 1;
-var price = '$1.50';
+var price = '$1.75';
 var cartCount = 0;
+var cartItems = [];
+var myCart;
+
+function Order (flavor, glaze, quant, price) {
+    this.flavor = flavor;
+    this.glaze = glaze;
+    this.quant = quant;
+    this.price = price;
+}
+
+function Cart (count, itemList) {
+    this.count = count;
+    this.itemList = itemList;
+}
+
+function getCart () {
+    console.log('in get cart');
+    if (sessionStorage.getItem('myCart') === null) {
+        myCart = new Cart(cartCount, cartItems);
+        console.log('made a new cart, it is: ' + myCart);
+    } else {
+        myCart = JSON.parse(sessionStorage.getItem('myCart'));
+        console.log('loaded cart from storage, it is: ' + myCart);
+    }
+    cartCount = myCart.count;
+    cartItems = myCart.itemList;
+}
 
 /*changeGlaze calls several helper functions*/
 function changeGlaze() {
@@ -14,10 +41,10 @@ function changeGlaze() {
 /*changes the image*/
 function updateImg() {
     if ("none" === glaze) {
-        document.getElementById("prodImg").style.background = 'url(./img/original.jpg)';
+        document.getElementById("prodImg").style.background = 'url(../img/blackberry.jpg)';
     } 
     else {
-        document.getElementById("prodImg").style.background = 'url(./img/' + glaze + '.jpg)';
+        document.getElementById("prodImg").style.background = 'url(../img/' + glaze + '.jpg)';
     }
 }
 
@@ -57,53 +84,63 @@ function updatePrice() {
     console.log('in updatePrice');
     if ("none" === glaze) {
         if (1 === quant) {
-            price = "$1.50";
+            price = "$1.75";
         } else if (3 === quant) {
-            price = "$4.25";
+            price = "$5.00";
         } else if (6 === quant) {
-            price = "$8.25";
+            price = "$9.75";
         } else if (12 === quant) {
-            price = "$16.25";
+            price = "$19.25";
         }
     } else if ("sugarMilk" === glaze) {
         if (1 === quant) {
-            price = "$2.00";
+            price = "$2.25";
         } else if (3 === quant) {
-            price = "$5.75";
+            price = "$6.50";
         } else if (6 === quant) {
-            price = "$11.25";
+            price = "$12.75";
         } else if (12 === quant) {
-            price = "$21.50";
+            price = "$24.50";
         }
     } else if ("vanillaMilk" === glaze) {
-        console.log('in nilla price');
         if (1 === quant) {
-            console.log('quant yay');
-            price = "$2.00";
+            price = "$2.25";
         } else if (3 === quant) {
-            price = "$5.75";
+            price = "$6.50";
         } else if (6 === quant) {
-            price = "$11.25";
+            price = "$12.75";
         } else if (12 === quant) {
-            price = "$21.50";
+            price = "$24.50";
         }
     } else if ("doubleChocolate" === glaze) {
         if (1 === quant) {
-            price = "$2.50";
+            price = "$2.75";
         } else if (3 === quant) {
-            price = "$7.00";
+            price = "$7.75";
         } else if (6 === quant) {
-            price = "$12.25";
+            price = "$13.75";
         } else if (12 === quant) {
-            price = "$24.00";
+            price = "$27.00";
         }
     }
-    console.log('glaze is: ' + glaze + ' and price is: ' + price);
     document.getElementById('priceField').innerHTML = price;
 }
 
 /*changes the count displayed in the icon*/
-function updateCart() {
+function addToCart() {
     cartCount += quant;
+    order = new Order('blackberry', glaze, quant, price);
+    myCart.itemList.push(order);
+    console.log('cart in addtocart is: ' + myCart);
+    myCart.count = cartCount;
+    sessionStorage.setItem('myCart', JSON.stringify(myCart));
     document.getElementById('cart').innerHTML = cartCount;
+}
+
+function onLoad() {
+    console.log('in onLoad');
+    getCart();
+    if (cartCount) {
+        document.getElementById('cart').innerHTML = cartCount;
+    }
 }

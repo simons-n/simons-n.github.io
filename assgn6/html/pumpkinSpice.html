@@ -1,11 +1,12 @@
 <!DOCTYPE html>
     <head>
-        <link rel = "stylesheet" type="text/css" href="product_5.css">
+        <link rel = "stylesheet" type="text/css" href="../css/pumpkinSpice.css">
+        <script src="../js/pumpkinSpice.js" type="text/javascript"></script>
         <title>Bun Bun Bake Shop Home</title>
     </head>
-    <body>
+    <body onload="onLoad()">
         <nav class="homeNav">
-            <a href="./home.html" class="navTitle" id="title">
+            <a href="../index.html" class="navTitle" id="title">
                 <div>Bun Bun Bake Shop</div>
             </a>
             <div class="navText" id="emptyspace"></div>
@@ -14,9 +15,8 @@
             </a>
             <div class="navText" id="locate">Locate</div>
             <div class="navText" id="about">About</div>
-            <div class="navText" id="cart">
-                <img src="./img/cartunselected.png" height="30" width="40" alt="cart icon"> 
-            </div>
+            <a href="./cart.html" class="navText" id="cart">
+            </a>
         </nav>
 
         <header>
@@ -62,7 +62,7 @@
             <div class="field" id="priceField">$1.75</div>
 
             <!--Buttons-->
-            <button class="button" id="add" type="button">ADD TO CART</button>
+            <button class="button" id="add" type="button" onclick="addToCart()">ADD TO CART</button>
             <a href="menu.html" class="button" id="moreBuns">&lt; More Buns</a>
             <button class="button" id="checkOut" type="button">Check Out ></button>
         </main>

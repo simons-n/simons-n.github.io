@@ -3,7 +3,7 @@ a:active {
 }
 
 body {
-    background-image: url("./img/background.png");
+    background-image: url("../img/background.png");
     background-size: 100% 100%;
     
     margin: 0;
@@ -18,7 +18,7 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     color: #ffffff;
-    background-image: url("./img/small\ bar.png");
+    background-image: url("../img/small\ bar.png");
     background-size: 100% 100%;
 }
 
@@ -49,7 +49,18 @@ body {
 }
 
 #cart {
-    padding-right: 5px;
+    margin-right: 5px;
+    height: 30px;
+    width: 40px;
+    background: url('../img/cartunselected.png') no-repeat;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 5px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /*Header*/
@@ -113,37 +124,37 @@ header {
 of the following IDs, because for some reason, it didn't work 
 when those lines were in .menuItem*/
 #original {
-    background: url(img/original.jpg);
+    background: url(../img/original.jpg);
     background-origin: content-box;
     background-repeat: no-repeat;
 }
 
 #blackberry {
-    background: url(img/blackberry.jpg);
+    background: url(../img/blackberry.jpg);
     background-origin: content-box;
     background-repeat: no-repeat;
 }
 
 #walnut{
-    background: url(img/walnut.jpg);
+    background: url(../img/walnut.jpg);
     background-origin: content-box;
     background-repeat: no-repeat;   
 }
 
 #glutenFree{
-    background: url(img/glutenFree.jpg);
+    background: url(../img/glutenFree.jpg);
     background-origin: content-box;
     background-repeat: no-repeat;   
 }
 
 #pumpkinSpice{
-    background: url(img/pumpkinSpice.jpg);
+    background: url(../img/pumpkinSpice.jpg);
     background-origin: content-box;
     background-repeat: no-repeat;   
 }
 
 #caramelPecan{
-    background: url(img/caramelPecan.jpg);
+    background: url(../img/caramelPecan.jpg);
     background-origin: content-box;
     background-repeat: no-repeat;   
 }

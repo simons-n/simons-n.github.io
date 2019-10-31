@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("./img/background.png");
+    background-image: url("../img/background.png");
     background-size: 100% 100%;
     
     margin: 0;
@@ -16,7 +16,7 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     color: #ffffff;
-    background-image: url("./img/small\ bar.png");
+    background-image: url("../img/small\ bar.png");
     background-size: 100% 100%;
 }
 #title {
@@ -42,7 +42,18 @@ body {
     flex-basis: 480px;
 }
 #cart {
-    padding-right: 5px;
+    margin-right: 5px;
+    height: 30px;
+    width: 40px;
+    background: url('../img/cartunselected.png') no-repeat;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 5px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /*The page grid*/
@@ -77,6 +88,7 @@ header {
 }
 
 /*setting styles for various classes*/
+
 .product {
     border: 1px solid lightgray;
     padding: 9px;
@@ -94,8 +106,9 @@ header {
     font-family: "American Typewriter";
 }
 .remove {
+    background-color: transparent;
+    border: none;
     position: relative;
-    top: 51px;
     font-size: 25px;
     font-family: "American Typewriter";
     color: gray;
@@ -118,41 +131,10 @@ header {
     font-size: 26px;
     font-family: "American Typewriter";
 }
-#product1 {
-    position: relative;
-    grid-area: 3 / 3 / 5 / 15;
-}
-#prod1Details {
-    grid-area: 3 / 5 / 5 / 8; 
-}
-#quant1 {
-    grid-area: 3 / 8 / 5 / 10;
-}
-#remove1 {
-    grid-area: 3 / 10 / 5 / 12;
-}
-#prodTotal1 {
-    grid-area: 3 / 12 / 5 / 15;
-}
-#product2 {
-    position: relative;
-    grid-area: 5 / 3 / 7 / 15;
-}
-#prod2Details {
-    grid-area: 5 / 5 / 7 / 8; 
-}
-#quant2 {
-    grid-area: 5 / 8 / 7 / 10;
-}
-#remove2 {
-    grid-area: 5 / 10 / 7 / 12;
-}
-#prodTotal2 {
-    grid-area: 5 / 12 / 7 / 15;
-}
+
 
 /*Buttons*/
-.button {
+.checkoutButton {
     background-color: #E44A66; 
     border: none;
     color: white;
@@ -168,23 +150,4 @@ header {
 }
 #checkout1 {
     grid-area: 2 / 11 / auto / auto;
-}
-#checkout2 {
-    grid-area: 8 / 11 / auto / auto;
-}
-
-/*Footer*/
-footer {
-    display: flex;
-    background-color: #2d2d2d;
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    bottom: 0px;
-}
-.footText {
-    color: #ffffff;
-    font-family: "American Typewriter";
 }
