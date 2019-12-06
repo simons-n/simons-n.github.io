@@ -10,7 +10,7 @@ http://www.tooplate.com/view/2082-pure-mix
 ------------------------------------- */
 body {
 		background: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     font-style: normal;
     font-weight: 300;
     position: relative;
@@ -189,40 +189,42 @@ nav a {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5) !important;
   height: 66px;
   max-height: 66px;
   margin: 0;
   border-radius: 0;
-  /* transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   padding-top: 1.5%;
   padding-left: 8%;
-  padding-right: 8%; */
+  padding-right: 8%;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999999;
 }
 
-.icon-bar {
-  color: #000 !important;
-}
+/* 
+.ml-auto {
+  left: auto !important;
+  right: 0;
+}  */
 
-.container-fluid {
+/* .container-fluid {
   width: 100%;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  /* padding-top: 1.5%; */
+  /* padding-top: 1.5%; *//*
   padding-left: 8%;
   padding-right: 8%;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%)
-}
+} */
 
 .nav-flex-container {
   width: 100%;
@@ -237,6 +239,7 @@ nav a {
   justify-content: space-between;
   overflow: hidden;
 }
+
 
 .brand {
   float: left;
@@ -259,9 +262,8 @@ nav a {
 .navbar-brand {
   color: #333 !important;
   font-size: 24px;
-  font-weight: 700;
-  opacity: 1;
   text-decoration: none;
+  letter-spacing: 2px;
 }
 
 /* .navbar-brand:hover {
@@ -273,6 +275,34 @@ nav a {
   -webkit-flex-basis: 56%;
   flex-basis: 56%;
 } */
+
+.nav-item {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  /* padding-top: 19px; */
+  margin-right: 2px;
+  margin-left: 2px;
+  margin: 4px;
+  /* height: 50px; */
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-item a {
+  padding-left: 4px;
+  text-align: right;
+  float: right;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  background: rgb(252, 217, 237) !important;
+}
+
 
 .navicon {  
   position: relative;
@@ -298,6 +328,14 @@ nav ul.right {
 .navbar-right li {
   display: inline-block;
   /* margin: 4px; */
+}
+
+.navbar-collapse {
+  float: right;
+}
+
+.navbar-toggler {
+  float: right;
 }
 
 .navbar-right li a {
