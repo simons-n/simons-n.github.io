@@ -189,7 +189,7 @@ nav a {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.89) !important;
   height: 66px;
   max-height: 66px;
   margin: 0;
@@ -628,7 +628,9 @@ a.icon {
 #portfolio .portfolio-thumb {
   position: relative;
   overflow: hidden;
-  margin: 0;
+  margin-bottom: 25px;
+  float: left;
+  min-height: 50px;
 } 
 
 #portfolio .portfolio-thumb .portfolio-overlay {
