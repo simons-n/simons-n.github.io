@@ -1,0 +1,362 @@
+/*
+
+CSS Based on Pure Mix template from:
+
+http://www.tooplate.com/view/2082-pure-mix
+
+*/
+
+/* Body 
+------------------------------------- */
+body {
+		background: #ffffff;
+    font-family: 'Open Sans', 'Comic Sans', 'Times', serif !important;
+    font-style: normal;
+    font-weight: 250;
+    position: relative;
+}
+
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 100%;
+}
+
+
+/* Typography
+------------------------------------- */
+
+h1,h2,h3,h4 {
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  /* text-transform: uppercase; */
+}
+
+h1 {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+h3 {
+  color: #444;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+h5 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #777;
+  font-size: 16px;
+  line-height: 28px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.page-heading {
+  color: rgb(26, 26, 26);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+
+/* Navigation Bar Styles
+/* ========================================== */
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.89) !important;
+  height: 66px;
+  max-height: 66px;
+  margin: 0;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  padding-top: 1.5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+}
+
+
+.navbar-brand {
+  color: #333 !important;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+
+.nav-item {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin: 4px;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-item a {
+  padding-left: 4px;
+  text-align: right;
+  float: right;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  background: rgb(252, 217, 237) !important;
+}
+
+
+.navbar-collapse {
+  float: right;
+}
+
+.navbar-toggler {
+  float: right;
+}
+
+
+/* header section styles
+/* ========================================== */
+#header {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin-top: 66px;
+  padding-top: 130px;
+  padding-bottom: 100px;
+  z-index: 9999;
+}
+
+#header .header-thumb {
+  background: #ffffff;
+  padding: 62px 20px 62px 20px;
+}
+
+.header-one .header-thumb,
+.header-two .header-thumb {
+  padding: 32px 20px 32px 20px !important;
+}
+
+.header-one, .header-two {
+  height: 42vh !important;
+  min-height: 420px;
+  padding-top: 120px !important;
+}
+
+.header-one {
+  background: url('../images/home-img.jpg') no-repeat;
+  height: 60vh !important;
+  min-height: 520px;
+  padding-top: 150px !important;
+}
+.header-two {
+  background: url('../images/home-img.jpg') no-repeat;
+}
+
+/* Portfolio section styles
+/* ========================================== */
+.section-title {
+  color: #333 !important;
+  font-size: 1.5rem;
+  font-weight: 250;
+}
+
+#portfolio {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#portfolio .portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 25px;
+  float: left;
+  min-height: 50px;
+} 
+
+#portfolio .portfolio-thumb .portfolio-overlay {
+  background: #141414;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+  opacity: 0.9;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay .portfolio-item {
+    text-align: center;
+    padding: 30% 20px 20px;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay .fa {
+    background: #f9f9f9;
+    border-radius: 100px;
+    color: #141414;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+/* project section styles
+/* ========================================== */
+#project {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+/* footer section styles
+/* ========================================== */
+footer {
+  background: #141414;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+
+/* social icon */
+.contact-info {
+  padding: 0;
+  margin: 0;
+}
+.contact-info li {
+  list-style: none;
+  display: inline-block;
+}
+.contact-info li a {
+  border-radius: 100px;
+  border: 1px solid transparent;
+  color: #909090;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  padding: 0px;
+  margin-top: 14px;
+  margin-right: 8px;
+  margin-left: 8px;
+  position: relative;
+  top: 0px;
+}
+.contact-info li a:hover {
+  background: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+
+  .brand {
+    padding-left: 24px;
+  }
+
+  .header-one, .header-two{
+    min-height: 380px;
+	padding-top: 80px !important;
+  }
+
+  #project .col-md-3 {
+    padding-bottom: 32px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  h1 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .filter-wrapper {
+    padding: 0px;
+  }
+
+  #contact {
+    padding-bottom: 4rem;
+  }
+
+  #contact .col-md-4 {
+    padding: 32px 20px 22px 62px;
+  }
+  .contact-submit {
+	width: 70%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .intro-inner {top: 50%;}
+}
