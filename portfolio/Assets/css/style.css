@@ -10,7 +10,7 @@ http://www.tooplate.com/view/2082-pure-mix
 ------------------------------------- */
 body {
 		background: #ffffff;
-    font-family: 'Open Sans', 'Comic Sans', 'Times', serif !important;
+    font-family: 'Open Sans', 'Comic Sans', 'Times', sans-serif !important;
     font-style: normal;
     font-weight: 250;
     position: relative;
@@ -85,6 +85,7 @@ a:focus {
 img {
   width: 100%;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .page-heading {
@@ -148,6 +149,7 @@ img {
 .nav-item a:hover,
 .nav-item a:focus {
   background: rgb(252, 217, 237) !important;
+  border-radius: 2px;
 }
 
 
@@ -173,30 +175,41 @@ img {
   z-index: 9999;
 }
 
-#header .header-thumb {
-  background: #ffffff;
-  padding: 62px 20px 62px 20px;
+.header-thumb {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border-radius: 5px;
+  padding: 32px 20px 32px 20px;
 }
 
-.header-one .header-thumb,
-.header-two .header-thumb {
-  padding: 32px 20px 32px 20px !important;
-}
+/* #header .container {
+  margin-left: 0px;
+  left: 0;
+} */
 
 .header-one, .header-two {
-  height: 42vh !important;
   min-height: 420px;
-  padding-top: 120px !important;
+  background-attachment: fixed !important;
 }
 
 .header-one {
   background: url('../images/home-img.jpg') no-repeat;
-  height: 60vh !important;
+  height: 67vh !important;
   min-height: 520px;
   padding-top: 150px !important;
 }
+
+.header-one .header-thumb {
+  padding-bottom: 5px;
+}
+
 .header-two {
   background: url('../images/home-img.jpg') no-repeat;
+  height: 50vh !important;
+  padding-top: 120px !important;
+}
+
+.construction-header {
+  height: 62.5vh !important;
 }
 
 /* Portfolio section styles
@@ -223,6 +236,7 @@ img {
   margin-bottom: 25px;
   float: left;
   min-height: 50px;
+  border-radius: 5px;
 } 
 
 #portfolio .portfolio-thumb .portfolio-overlay {
@@ -278,8 +292,11 @@ footer {
   text-align: center;
 }
 
+#construction-footer {
+  height: 29.5vh !important;
+}
 
-/* social icon */
+/* contact info */
 .contact-info {
   padding: 0;
   margin: 0;
@@ -311,16 +328,59 @@ footer {
   background: #ffffff;
 }
 
+.contact-box {
+  text-align: center;
+  width: 100%;
+}
+
+.header-contact li {
+  list-style: none;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px; 
+  font-size: 30px;
+}
+
+.header-contact {
+  /* border-radius: 100px;
+  border: 1px solid transparent;
+  color: #909090;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  padding: 0px;
+  margin-top: 14px;
+  margin-right: 8px;
+  margin-left: 8px;
+  position: relative;
+  top: 0px; */
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-right: .75vw;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  display: inline-block;
+}
+
+.header-contact li a:hover {
+  /* background: rgb(252, 217, 237); */
+  color: rgb(61, 61, 61);
+  background: rgb(252, 217, 237);
+  border-radius: 5px !important;
+}
 
 @media (max-width: 768px) {
 
-  .brand {
-    padding-left: 24px;
-  }
-
   .header-one, .header-two{
     min-height: 380px;
-	padding-top: 80px !important;
+	  padding-top: 80px !important;
   }
 
   #project .col-md-3 {
