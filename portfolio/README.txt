@@ -1,2 +1,2 @@
-It looks like animations aren't working correctly thanks to some unusual github error?
-However, if you download the code to your local machine, they should appear correctly.
+Disregard previous README, I was able to fix the issue (Mixed Content error, since github pages loads over HTTPS)
+
