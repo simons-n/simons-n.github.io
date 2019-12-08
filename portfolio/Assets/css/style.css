@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2082-pure-mix
 /* Body 
 ------------------------------------- */
 body {
-		background: #ffffff;
+		background: #fff;
     font-family: 'Open Sans', 'Comic Sans', 'Times', sans-serif !important;
     font-style: normal;
     font-weight: 250;
@@ -260,6 +260,18 @@ img {
 #portfolio .portfolio-thumb .portfolio-overlay .portfolio-item {
     text-align: center;
     padding: 30% 20px 20px;
+}
+
+.arrow-div {
+  width: 100vw;
+  width: 100%;
+  text-align: center;
+}
+
+.arrow {
+  width: 10rem;
+  height: 10rem;
+  color: rgb(48, 47, 47);
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay .fa {
