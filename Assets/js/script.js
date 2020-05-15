@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 //Flip project item image before linking to next page
-$(".portfolio-thumb").click(function (e) {
+$(".img-responsive").click(function (e) {
     e.preventDefault();                   
     var nextPage = this.getAttribute("href"); // stores the href
 
@@ -17,9 +17,9 @@ $(".portfolio-thumb").click(function (e) {
 });
 
 //Pulse Project item on hover
-$(".portfolio-thumb").hover(function (e) {                 
+$(".img-responsive").hover(function (e) {                 
     $(this).addClass("wow pulse animated");
-    $(this).attr("style","visibility: visible; animation-name: pulse;");                        
+    $(this).attr("style","visibility: visible; animation-name: pulse;");                  
 });
 
 //Pulse image on hover
@@ -27,3 +27,18 @@ $("img").hover(function (e) {
     $(this).addClass("wow pulse animated");
     $(this).attr("style","visibility: visible; animation-name: pulse;");                        
 });
+
+//Resize overlay to size of image
+function changeSize() {
+    var elem = document.getElementById("img-cat");
+    var sty = window.getComputedStyle(elem);
+    var imgWidth = sty.getPropertyValue("width");
+    var imgHeight = sty.getPropertyValue("height");
+
+    var overlays = document.getElementsByClassName("portfolio-overlay");
+    Array.prototype.forEach.call(overlays, function(overlay) {
+        overlay.style.width = imgWidth;
+        overlay.style.height = imgHeight;
+        overlay.style.marginLeft = "15px";
+    });
+}

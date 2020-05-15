@@ -10,7 +10,7 @@ http://www.tooplate.com/view/2082-pure-mix
 ------------------------------------- */
 body {
 		background: #fff;
-    font-family: 'Open Sans', 'Comic Sans', 'Times', sans-serif !important;
+    font-family: 'Montserrat', 'PT Sans', 'Open Sans', sans-serif !important;
     font-style: normal;
     font-weight: 250;
     position: relative;
@@ -53,8 +53,10 @@ h3 {
 }
 
 h5 {
-  font-weight: 400;
-  letter-spacing: 1px;
+  margin-top: .4rem;
+  font-weight: 500 !important;
+  font-size: 20px;
+  /* letter-spacing: 1px;  */
 }
 
 p {
@@ -230,6 +232,8 @@ img {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 6rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #portfolio img {
@@ -241,9 +245,20 @@ img {
   overflow: hidden;
   margin-bottom: 25px;
   float: left;
-  min-height: 50px;
-  border-radius: 5px;
+  /*
+  min-height: 50px; */
+  /* padding: 0px !important; */
+  /* margin-left: 15px !important;
+  margin-right: 15px !important; */
 } 
+
+/* .portfolio-thumb .col-md-6 {
+  width: 525px !important;
+  padding: 0px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+} */
+
 
 #portfolio .portfolio-thumb .portfolio-overlay {
   background: #141414;
@@ -294,6 +309,15 @@ img {
     margin-bottom: 4px;
 }
 
+.img-responsive {
+  border-style: solid;
+  border-color: #141414;
+  margin: 5px;
+}
+
+.img-responsive {
+  margin: 0px !important;
+}
 /* project section styles
 /* ========================================== */
 #project {
@@ -438,3 +462,15 @@ footer {
 @media (max-width: 450px) {
   .intro-inner {top: 50%;}
 }
+
+
+/* .projects-section a {
+  padding: 0px !important;
+  border-left-width: 5px !important;
+  border-right-width: 5px !important;
+  border-color: #ffffff !important;
+} */
+
+/* .projects-section a {
+  width: 525px !important;
+} */

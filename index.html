@@ -45,10 +45,12 @@ http://www.tooplate.com/view/2082-pure-mix
 
 	<!-- Google web font 
    ================================================== -->	
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:250,300,400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:250,300,400,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:250,300,400,600,700&display=swap" rel="stylesheet">
 	
 </head>
-<body>
+<body onresize="changeSize()" onload="changeSize()">
 
 
 <!-- Navigation section
@@ -98,7 +100,6 @@ http://www.tooplate.com/view/2082-pure-mix
 	</div>		
 </section>
 
-
 <!-- Portfolio section
 ================================================== -->
 <br>
@@ -120,67 +121,72 @@ http://www.tooplate.com/view/2082-pure-mix
                <div class="projects-section wow bounceInUp" data-wow-delay="1s">
                            
                               
-                                 <a href="./Project 1/responsive.html" id="project1" class="portfolio-thumb col-md-6 col-sm-6">
-                                    <img src="Assets/images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">   
-                                                <ion-icon class="fa" name="paw"></ion-icon>
-                                                <h2>Responsive Web Design</h2>
-                                                <h3>Guerrilla Research</h3>
-                                                <h3>Persona Design</h3>
-                                                <h3>Speed-Dating</h3>
-                                             </div>
-                                       </div>
-                                 </a>
-                                 
+                                 <div onresize="changeSize()" class="portfolio-thumb col-md-6 col-sm-6">
+                                    <a href="./Project 1/responsive.html" id="project1" class="portfolio-link">
+                                       <img onresize="changeSize()" src="Assets/images/portfolio-img1.jpg" class="img-responsive thumb-img" id="img-cat" alt="Portfolio">
+                                          <div class="portfolio-overlay">
+                                             <div class="portfolio-item">   
+                                                   <ion-icon class="fa" name="paw"></ion-icon>
+                                                   <h2>Responsive Web Design</h2>
+                                                   <h3>Guerrilla Research</h3>
+                                                   <h3>Persona Design</h3>
+                                                   <h3>Speed-Dating</h3>
+                                                </div>
+                                          </div>
+                                    </a>
+                                    <h5>Responsive Web Design</h5>
+                                 </div>
                               
 
                       
-                                 
-                                 <a href="./Project 2/ucre.html" id="project2" class="portfolio-thumb col-md-6 col-sm-6">
-                                    <img src="Assets/images/portfolio-img2.jpg" class="img-ucre" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <ion-icon class="fa" name="navigate"></ion-icon>
-                                                <h2>User-Centered Research</h2>
-                                                <h3>Customer-Journey Mapping</h3>
-                                                <h3>Observe and Intercept</h3>
-                                                <h3>Think-Aloud Protocol</h3>
-                                                <h3>Experience Prototyping</h3>
-                                             </div>
-                                       </div>
-                                 </a>
-                              
+                                 <div class="portfolio-thumb col-md-6 col-sm-6">
+                                    <a href="./Project 2/ucre.html" id="project2" class="portfolio-link">
+                                       <img src="Assets/images/portfolio-img2.jpg" class="img-responsive thumb-img" id="img-ucre" alt="Portfolio">
+                                          <div class="portfolio-overlay">
+                                             <div class="portfolio-item">
+                                                   <ion-icon class="fa" name="navigate"></ion-icon>
+                                                   <h2>User-Centered Research</h2>
+                                                   <h3>Customer-Journey Mapping</h3>
+                                                   <h3>Observe and Intercept</h3>
+                                                   <h3>Think-Aloud Protocol</h3>
+                                                   <h3>Experience Prototyping</h3>
+                                                </div>
+                                          </div>
+                                    </a>
+                                    <h5>User-Centered Research</h5>
+                                 </div>
 
-                              
-                                 <a href="./Project 3/capstone.html" id="project3" class="portfolio-thumb col-md-6 col-sm-6">
-                                    <img src="Assets/images/portfolio-img3.jpg" class="img-data" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <ion-icon class="fa" name="paper-plane"></ion-icon>
-                                                <h2>Capstone Project</h2>
-                                                <h3>Exploratory Research</h3>
-                                                <h3>Semi-Structured Interview</h3>
-                                                <h3>Pretotyping</h3>
-                                             </div>
-                                       </div>
-                                 </a>
-                              
+                                 <div class="portfolio-thumb col-md-6 col-sm-6">
+                                    <a href="./Project 3/capstone.html" id="project3" class="portfolio-link">
+                                       <img src="Assets/images/portfolio-img3.jpg" class="img-responsive thumb-img" id="img-capstone" alt="Portfolio">
+                                          <div class="portfolio-overlay">
+                                             <div class="portfolio-item">
+                                                   <ion-icon class="fa" name="paper-plane"></ion-icon>
+                                                   <h2>Capstone Project</h2>
+                                                   <h3>Exploratory Research</h3>
+                                                   <h3>Semi-Structured Interview</h3>
+                                                   <h3>Pretotyping</h3>
+                                                </div>
+                                          </div>
+                                    </a>
+                                    <h5>Capstone Project</h5>
+                                 </div>
 
-                              
-                                 <a href="./Other HTML/construction.html" id="project4" class="portfolio-thumb col-md-6 col-sm-6">
-                                    <img src="Assets/images/portfolio-img4.jpg" class="img-corp" alt="Portfolio">
-                                       <div class="portfolio-overlay">
-                                          <div class="portfolio-item">
-                                                <ion-icon class="fa" name="microphone"></ion-icon>
-                                                <h2>Designing for Corporations</h2>
-                                                <h3>Paper Prototyping</h3>
-                                                <h3>User Testing</h3>
-                                                <h3>InVision</h3>
-                                             </div>
-                                       </div>
-                                 </a>
-                              
+                                 <div class="portfolio-thumb col-md-6 col-sm-6">
+                                    <a href="./Other HTML/construction.html" id="project4" class="portfolio-link">
+                                       <img src="Assets/images/portfolio-img4.jpg" class="img-responsive thumb-img" id="img-corp" alt="Portfolio">
+                                          <div class="portfolio-overlay">
+                                             <div class="portfolio-item">
+                                                   <ion-icon class="fa" name="microphone"></ion-icon>
+                                                   <h2>Designing for Corporations</h2>
+                                                   <h3>Paper Prototyping</h3>
+                                                   <h3>User Testing</h3>
+                                                   <h3>InVision</h3>
+                                                </div>
+                                          </div>
+                                    </a>
+                                    <h5>Designing for Corporations</h5>
+                                 </div>
                             
                         
 
