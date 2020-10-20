@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href="../css/cart.css">
+        <script src="../js/cart.js" type="text/javascript"></script>
+        <title>Bun Bun Bake Shop Home</title>
+    </head>
+    <body onload="onLoad()">
+        <nav class="homeNav">
+            <a href="../index.html" class="navTitle" id="title">
+                <div>Bun Bun Bake Shop</div>
+            </a>
+            <div class="navText" id="emptyspace"></div>
+            <a href="./menu.html" class="navText" id="menu">
+                <div>Menu</div>
+            </a>
+            <div class="navText" id="locate">Locate</div>
+            <div class="navText" id="about">About</div>
+            <div class="navText" id="cart">
+            </div>
+        </nav>
+
+
+        <main>
+
+            <header>
+                Your Cart
+            </header>
+
+            <!--Total-->
+            <div class="total" id="total"></div>
+
+            <!--Buttons-->
+            <button class="checkoutButton" id="checkout1" type="button">CONTINUE TO CHECKOUT</button>
+            <button class="checkoutButton" id="checkout2" type="button">CONTINUE TO CHECKOUT</button>
+
+            <div id="cartRectangle">
+            </div>
+
+        </main>
+    </body>
+</html>

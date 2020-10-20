@@ -1,0 +1,177 @@
+a:active {
+    color: green;
+}
+
+body {
+    background-image: url("../img/background.png");
+    background-size: 100% 100%;
+    
+    margin: 0;
+    padding: 0;
+}
+/*Navigation Bar*/
+.homeNav {
+    display: flex;
+    height: 70px;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #ffffff;
+    background-image: url("../img/small\ bar.png");
+    background-size: 100% 100%;
+}
+
+#title {
+    font-family: "American Typewriter";
+    font-size: 59px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.navText {
+    top: 80px;
+    font-size: 22px;
+    font-family: "American Typewriter";
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+#menu{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#emptyspace {
+    flex-basis: 480px;
+}
+
+#cart {
+    margin-right: 5px;
+    height: 30px;
+    width: 40px;
+    background: url('../img/cartunselected.png') no-repeat;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 5px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Header*/
+header {
+    font-family: "American Typewriter";
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Menu and Menu Items*/
+.menuGrid {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    height: 289px;
+}
+
+.menuItem {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 289px;
+    width: 345px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Top row of menu*/
+#top {
+    align-items: flex-end;
+}
+/*Bottom row of menu*/
+#bottom{
+    padding-bottom: 20px;
+}
+
+/*Labels for each menu item*/
+.itemBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 245px;
+    background-color: #ffffff;
+    opacity: 0.70;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 44px;
+}
+
+.itemText {
+    font-family: "American Typewriter";
+    font-size: 25px;
+    line-height: 44px;
+    text-align: center;    
+}
+
+/*background-origin and background-repeat are repeated in each 
+of the following IDs, because for some reason, it didn't work 
+when those lines were in .menuItem*/
+#original {
+    background: url(../img/original.jpg);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#blackberry {
+    background: url(../img/blackberry.jpg);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#walnut{
+    background: url(../img/walnut.jpg);
+    background-origin: content-box;
+    background-repeat: no-repeat;   
+}
+
+#glutenFree{
+    background: url(../img/glutenFree.jpg);
+    background-origin: content-box;
+    background-repeat: no-repeat;   
+}
+
+#pumpkinSpice{
+    background: url(../img/pumpkinSpice.jpg);
+    background-origin: content-box;
+    background-repeat: no-repeat;   
+}
+
+#caramelPecan{
+    background: url(../img/caramelPecan.jpg);
+    background-origin: content-box;
+    background-repeat: no-repeat;   
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    background-color: #2d2d2d;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    height: 20px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footText {
+    color: #ffffff;
+    font-family: "American Typewriter";
+}
