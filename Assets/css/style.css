@@ -201,10 +201,6 @@ img {
   padding: 32px 20px 32px 20px;
 }
 
-/* #header .container {
-  margin-left: 0px;
-  left: 0;
-} */
 
 .header-one, .header-two {
   min-height: 420px;
@@ -255,10 +251,6 @@ img {
   padding-top: 120px !important;
 }
 
-/*.capstone-header {
-  width: 75vw !important;
-}*/
-
 .construction-header {
   height: 62.5vh !important;
 }
@@ -289,19 +281,8 @@ img {
   overflow: hidden;
   margin-bottom: 25px;
   float: left;
-  /*
-  min-height: 50px; */
-  /* padding: 0px !important; */
-  /* margin-left: 15px !important;
-  margin-right: 15px !important; */
 } 
 
-/* .portfolio-thumb .col-md-6 {
-  width: 525px !important;
-  padding: 0px !important;
-  margin-left: 15px !important;
-  margin-right: 15px !important;
-} */
 
 
 #portfolio .portfolio-thumb .portfolio-overlay {
@@ -333,7 +314,6 @@ img {
     padding-top: 2%;
     width: 100%;
     height: 30%;
-    /*border-radius: 0px 0px 5px 5px;*/
     background: #141414;
     opacity: .9;
     display: block;
@@ -455,37 +435,34 @@ footer {
 }
 
 .header-contact {
-  /* border-radius: 100px;
-  border: 1px solid transparent;
-  color: #909090;
-  font-size: 18px;
-  width: 50px;
-  height: 50px;
-  line-height: 60px;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  transition: all 0.4s ease-in-out;
-  padding: 0px;
-  margin-top: 14px;
-  margin-right: 8px;
-  margin-left: 8px;
-  position: relative;
-  top: 0px; */
-  padding-left: 5px;
+  padding-left: 0px;
   padding-right: 5px;
   border-radius: 5px;
   margin-top: 0px;
   margin-right: .75vw;
   margin-bottom: 0px;
-  margin-left: 3vw;
+  margin-left: 4vw;
 }
 
 .header-contact li a:hover {
-  /* background: rgb(252, 217, 237); */
   color: rgb(61, 61, 61);
   background: rgb(252, 217, 237);
   border-radius: 5px !important;
+}
+
+#left-icon {
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+}
+
+@media (max-width: 1199px) {
+  .header-one {
+    content:url('../images/home-img-smaller1.png');
+}
+
+@media (max-width: 991px) {
+  .header-one {
+    content:url('../images/home-img-smaller2.png');
 }
 
 @media (max-width: 768px) {
@@ -493,24 +470,23 @@ footer {
   .header-one, .header-two{
     min-height: 380px;
 	  padding-top: 80px !important;
+  } 
+
+  .header-one {
+    content:url('../images/home-img-smaller3.png');
   }
 
   #project .col-md-3 {
     padding-bottom: 32px;
   }
-
 }
 
+@media (max-width: 575px) {
+  .header-one {
+    content:url('../images/home-img-smaller4.png');
+}
 
 @media (max-width: 700px) {
-
-  h1 {
-    font-size: 1.3rem;
-  }
-  h3 {
-    font-size: 13px;
-    letter-spacing: 3px;
-  }
 
   .filter-wrapper {
     padding: 0px;
@@ -553,17 +529,6 @@ footer {
   font-style: 700;
   font-size: 1.4rem;
 }
-
-/* .projects-section a {
-  padding: 0px !important;
-  border-left-width: 5px !important;
-  border-right-width: 5px !important;
-  border-color: #ffffff !important;
-} */
-
-/* .projects-section a {
-  width: 525px !important;
-} */
 
 
 /* Style the Image Used to Trigger the Modal */

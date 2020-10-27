@@ -35,7 +35,6 @@ function changeSize() {
     var sty = window.getComputedStyle(elem);
     var imgWidth = sty.getPropertyValue("width");
     var imgHeight = sty.getPropertyValue("height");
-    console.log("width: " + imgWidth);
 
     var overlays = document.getElementsByClassName("portfolio-overlay");
     var h4s = document.getElementsByTagName("h4");
@@ -57,7 +56,6 @@ function changeSize() {
             h4.style.display = "block";
         });
         Array.prototype.forEach.call(items, function(item) { 
-            console.log("setting portfolio-item to block");
             item.style.display = "block";
         });
     }
