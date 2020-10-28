@@ -358,6 +358,8 @@ img {
 #project {
   padding-top: 4rem;
   padding-bottom: 6rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 /* footer section styles
@@ -458,11 +460,13 @@ footer {
 @media (max-width: 1199px) {
   .header-one {
     content:url('../images/home-img-smaller1.png');
+  }
 }
 
 @media (max-width: 991px) {
   .header-one {
     content:url('../images/home-img-smaller2.png');
+  }
 }
 
 @media (max-width: 768px) {
@@ -484,6 +488,7 @@ footer {
 @media (max-width: 575px) {
   .header-one {
     content:url('../images/home-img-smaller4.png');
+  }
 }
 
 @media (max-width: 700px) {
@@ -529,7 +534,6 @@ footer {
   font-style: 700;
   font-size: 1.4rem;
 }
-
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
