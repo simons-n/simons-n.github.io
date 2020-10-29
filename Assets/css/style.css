@@ -145,9 +145,8 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999999;
+  z-index: 9999999999;
 }
-
 
 .navbar-brand {
   color: #333 !important;
@@ -187,6 +186,7 @@ img {
 
 .navbar-collapse {
   float: right;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .navbar-toggler {
