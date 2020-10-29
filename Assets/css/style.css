@@ -68,6 +68,15 @@ h5 {
   /* letter-spacing: 1px;  */
 }
 
+iframe {
+  width: 60vw !important;
+  height: 33.75vw !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(100, 100, 100);
+  border-radius: 2px; 
+}
+
 p {
   color: rgb(100, 100, 100);
   font-size: 17px;
@@ -499,6 +508,11 @@ footer {
   #project .col-md-3 {
     padding-bottom: 32px;
   }
+
+  .smaller-img {
+    max-width: 90vw;
+  }
+
 }
 
 @media (max-width: 575px) {
