@@ -76,6 +76,11 @@ p {
   letter-spacing: 0.85px;
 }
 
+b {
+  color: rgb(88, 88, 88);
+  font-weight: 550;
+}
+
 a {
   outline: none;
   text-decoration: none;
